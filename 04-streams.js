@@ -15,7 +15,7 @@ Streams
 
 'use strict'
 
-var fs = require('fs'),
+const fs = require('fs'),
 	readStream = fs.createReadStream('assets/nombres.txt'),
 	writeStream = fs.createWriteStream('assets/nombres_copia.txt')
 

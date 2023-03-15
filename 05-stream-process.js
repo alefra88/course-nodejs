@@ -5,7 +5,7 @@ https://nodejs.org/api/process.html#process_process_stdout
 
 'use strict'
 
-var stdin = process.stdin,
+const stdin = process.stdin,
 	stdout = process.stdout,
 	person = {
 		name : null,
@@ -33,7 +33,7 @@ function saveName(name)
 	person.name = name
 
 	// Vuelvo a preguntar
-	var question = 'Hola ' + person.name + ' ¿Cuántos años tienes?'
+	const question = 'Hola ' + person.name + ' ¿Cuántos años tienes?'
 	
 	quiz(question, saveAge)
 }
