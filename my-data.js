@@ -1,6 +1,6 @@
 'use strict'
 
-var name = 'Jonathan',
+const name = 'Jonathan',
 	email = 'jonmircha@bextlan.com',
 	_phone = '5215518388261'
 
