@@ -4,7 +4,7 @@ http://www.etnassoft.com/2011/03/14/funciones-autoejecutables-en-javascript/
 */
 'use strict'
 
-const Clock = (function (){
+const Clock = (()=>{
 	const EventEmitter = require('events').EventEmitter,
 		inherits = require('util').inherits
 
@@ -22,7 +22,7 @@ const Clock = (function (){
 
 	inherits(Clock, EventEmitter)
 
-	Clock.prototype.theTime = function ()
+	Clock.prototype.theTime =  ()=>
 	{
 		const date = new Date(),
 			hrsAmPm = ( date.getHours() > 12 ) ? ( date.getHours() - 12) : date.getHours(),
