@@ -11,7 +11,7 @@ class Clock
 
 	theTime()
 	{
-		var date = new Date(),
+		const date = new Date(),
 			hrsAmPm = ( date.getHours() > 12 ) ? ( date.getHours() - 12) : date.getHours(),
 			hrs = addZero( hrsAmPm ),
 			min = addZero( date.getMinutes() ),
