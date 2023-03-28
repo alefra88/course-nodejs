@@ -4,14 +4,14 @@ http://www.etnassoft.com/2011/03/14/funciones-autoejecutables-en-javascript/
 */
 'use strict'
 
-var Clock = (function (){
-	var EventEmitter = require('events').EventEmitter,
+const Clock = (function (){
+	const EventEmitter = require('events').EventEmitter,
 		inherits = require('util').inherits
 
 	//constructor
-	var Clock = function ()
+	const Clock = function ()
 	{
-		//var self = this
+		//const self = this
 
 		setInterval( () => {
 			//console.log('hola')
@@ -24,7 +24,7 @@ var Clock = (function (){
 
 	Clock.prototype.theTime = function ()
 	{
-		var date = new Date(),
+		const date = new Date(),
 			hrsAmPm = ( date.getHours() > 12 ) ? ( date.getHours() - 12) : date.getHours(),
 			hrs = addZero( hrsAmPm ),
 			min = addZero( date.getMinutes() ),
