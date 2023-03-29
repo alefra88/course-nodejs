@@ -5,7 +5,7 @@ Contiene utilidades para manejar y transformar las rutas de los directorios y  a
 */
 'use strict'
 
-var http = require('http').createServer(webServer),
+const http = require('http').createServer(webServer),
 	path = require('path'),
 	urls = [
 		{
@@ -24,7 +24,7 @@ var http = require('http').createServer(webServer),
 
 function webServer(req, res)
 {
-	var message = '<h1>Hola Node.js</h1>',
+	const message = '<h1>Hola Node.js</h1>',
 		pathURL = path.basename(req.url)
 
 	console.log(pathURL)

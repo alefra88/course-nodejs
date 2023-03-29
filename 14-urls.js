@@ -9,7 +9,7 @@ Este módulo proporciona utilidades para hacer frente a las cadenas de consulta
 */
 'use strict'
 
-var http = require('http').createServer(webServer),
+const http = require('http').createServer(webServer),
 	path = require('path'),
 	url = require('url'),
 	urls = [
@@ -32,7 +32,7 @@ var http = require('http').createServer(webServer),
 
 function webServer(req, res)
 {
-	var message = '<h1>Hola Node.js</h1>',
+	let message = '<h1>Hola Node.js</h1>',
 		pathURL = path.basename(req.url),
 		//Pass true as the second argument to also parse the query string using the querystring module
 		id = url.parse( req.url, true ).query.id
