@@ -1,6 +1,6 @@
 'use strict'
 
-var http = require('http').createServer(webServer),
+const http = require('http').createServer(webServer),
 	fs = require('fs'),
 	index = fs.createReadStream('assets/index.html')
 
