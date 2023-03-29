@@ -1,6 +1,6 @@
 'use strict'
 
-var http = require('http').createServer(webServer),
+const http = require('http').createServer(webServer),
 	form = require('fs').readFileSync('assets/form.html'),
 	querystring = require('querystring'),
 	util = require('util'),
