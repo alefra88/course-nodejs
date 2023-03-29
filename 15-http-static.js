@@ -1,6 +1,6 @@
 'use strict'
 
-var http = require('http').createServer(webServer),
+const http = require('http').createServer(webServer),
 	fs = require('fs'),
 	path = require('path'),
 	url = require('url'),
@@ -24,7 +24,7 @@ var http = require('http').createServer(webServer),
 
 function webServer(req, res)
 {
-	var pathURL = path.basename(req.url),
+	const pathURL = path.basename(req.url),
 		id = url.parse( req.url, true ).query.id
 
 	console.log(`path:${pathURL}, id: ${id}`)
