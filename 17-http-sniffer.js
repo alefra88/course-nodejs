@@ -1,6 +1,6 @@
 'use strict'
 
-var http = require('http'),
+const http = require('http'),
 	options = {
 		host : 'www.mediotiempo.com',
 		port : 80,
