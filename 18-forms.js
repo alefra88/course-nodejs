@@ -22,7 +22,7 @@ function webServer(req, res)
 				dataString += data
 			})
 			.on('end', function (){
-				var dataObject = querystring.parse(dataString),
+				let dataObject = querystring.parse(dataString),
 					dataJSON = util.inspect(dataObject),
 					templateString = `
 Los datos que enviaste por POST como string son: ${dataString}
