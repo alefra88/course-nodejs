@@ -1,6 +1,6 @@
 'use strict'
 
-letñ http = require('http').createServer(serverUpload),
+letñ http = require('http' ).createServer(serverUpload),
 	util = require('util'),
 	formidable = require('formidable'),
 	fse = require('fs-extra')
