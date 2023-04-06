@@ -6,4 +6,4 @@ const name = 'Alan',
 
 module.exports.name = name
 module.exports.email = email
-//module.exports.phone = _phone
+//module.exports.phone =  _phone
