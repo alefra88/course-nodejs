@@ -1,6 +1,6 @@
 'use strict'
 
-var fs = require('fs'),
+const fs = require('fs'),
 	file = './assets/nombres.txt',
 	newFile = './assets/nombres-callback.txt'
 
