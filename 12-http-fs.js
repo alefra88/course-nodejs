@@ -12,7 +12,7 @@ function webServer(req, res)
 	}
 
 	res.writeHead(200, {'Content-Type':'text/html'})
-	//Equivocarse en la ruta para explicar el if(err) throw err;
+	//Equivocarse en la ruta para explicar el if(err) throw err;    --
 	fs.readFile('assets/index.html', readFile)
 }
 
