@@ -13,7 +13,7 @@ fs.access(file, fs.F_OK, function (err) {
       if (err) {
         console.log("El archivo no se pudo leer");
       } else {
-        console.log("El archivo se ha leído exitosamente ");
+        console.log("El archivo se ha leído exitosamentee ");
         fs.writeFile(newFile, data, function (err) {
           return err
             ? console.log("El archivo no se pudo copiar")
