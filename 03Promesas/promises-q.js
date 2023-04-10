@@ -1,6 +1,6 @@
 'use strict'
 
-var fs = require('fs'),
+const fs = require('fs'),
 	Q = require('q'),
 	file = './assets/nombres.txt',
 	newFile = './assets/nombres-promises-q.txt'
