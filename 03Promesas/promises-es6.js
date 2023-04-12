@@ -1,6 +1,6 @@
 'use strict'
 
-const fs = require('fs'),
+let fs = require('fs'),
 	file = './assets/nombres.tx',
 	newFile = './assets/nombres-promises-es6.txt',
 	promise = new Promise((resolve, reject) => {
