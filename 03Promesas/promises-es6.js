@@ -1,4 +1,4 @@
-'use strict'
+
 
 let fs = require('fs'),
 	file = './assets/nombres.tx',
@@ -29,4 +29,4 @@ promise
 		})
 	})
 	.then((dataPromise) => { console.log(dataPromise) })
-	.catch((err) => { console.log(err.message) })
+	.catch((err ) => { console.log(err.message) })
