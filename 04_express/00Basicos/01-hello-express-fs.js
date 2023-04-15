@@ -1,6 +1,6 @@
 'use strict'
 
-var express = require('express'),
+const express = require('express'),
 	app = express()
 
 app
