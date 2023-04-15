@@ -1,6 +1,6 @@
 'use strict'
 
-var express = require('express'),
+const express = require('express'),
 	app = express()
 
 app
@@ -9,16 +9,16 @@ app
 		res.send('<h1>Hola Mundo desde Express</h1>')
 	})
 
-	.get('/bextlan', (req, res) => {
-		//res.send('<h1>Bienvenid@s a Bextlán... Lugar de bits, vectores y pixeles.</h1>')
-		res.redirect(301, 'http://bextlan.com')
+	.get('/alanef88', (req, res) => {
+		//res.send('<h1>Bienvenid@s a mi pagina web de prueba xd.</h1>')
+		res.redirect(301, 'http://github.com/alefra88')
 	})
 
 	.get('/json', (req, res) => {
 		res.json({
-			name : "Jonathan",
-			age : 31,
-			twitter : "@jonmircha"
+			name : "Alan",
+			age : 35,
+			github : "@alefra88"
 		})
 	})
 
