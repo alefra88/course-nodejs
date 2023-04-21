@@ -1,6 +1,6 @@
 'use strict'
 
-let express = require('express'),
+const express = require('express'),
 	app = express(),
 	cookieParser = require('cookie-parser'),
 	cookieSession = require('cookie-session')
