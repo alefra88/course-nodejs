@@ -6,7 +6,7 @@ en la terminal ejecutar node debug nombre-script.js
 
 'use strict'
 
-var http = require('http')
+const http = require('http')
 
 function webServer(req, res)
 {
