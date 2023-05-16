@@ -1,6 +1,6 @@
 'use strict'
 
-var express = require('express'),
+let express = require('express'),
 	favicon = require('serve-favicon'),
 	bodyParser = require('body-parser'),
 	morgan = require('morgan'),
