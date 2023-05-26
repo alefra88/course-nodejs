@@ -2,7 +2,7 @@
 
 'use strict'
 
-var EventEmitter = require('events').EventEmitter,
+const EventEmitter = require('events').EventEmitter,
 	pub = new EventEmitter()
 
 pub
